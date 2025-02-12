@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarushv's CP Tips</title>
+  <style>
+    /* CSS Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    /* Base styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: fadeIn 2s;
+    }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #ffdd57;
+    }
+    
+    .mode-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.3);
+      border: none;
+      padding: 8px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9em;
+      transition: background 0.3s;
+    }
+    
+    .mode-toggle:hover {
+      background: rgba(255,255,255,0.5);
+    }
+    
+    section {
+      padding: 40px 20px;
+      animation: fadeIn 1.5s;
+    }
+    
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #6a11cb;
+    }
+    
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2575fc;
+    }
+    
+    .card ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    
+    a.resource-link {
+      color: #2575fc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    a.resource-link:hover {
+      color: #6a11cb;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      color: #333;
+    }
+    
+    /* Dark Mode */
+    body.dark {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    
+    body.dark header {
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+    }
+    
+    body.dark .card {
+      background: #1e1e1e;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    
+    body.dark footer {
+      background: #1e1e1e;
+      color: #e0e0e0;
+    }
+    
+    body.dark a.resource-link {
+      color: #8ab4f8;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      nav a { margin: 0 5px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="mode-toggle" id="mode-toggle">Dark Mode</button>
+    <h1>Tarushv's CP Tips</h1>
+    <nav>
+      <a href="#resources">Resources</a>
+      <a href="#tips">Tips & Tricks</a>
+      <a href="#more">More</a>
+    </nav>
+  </header>
+  
+  <!-- Introduction Section -->
+  <section id="intro">
+    <div class="content">
+      <div class="card">
+        <h3>Welcome!</h3>
+        <p>
+          This website is dedicated to all things Competitive Programming. Whether you're just starting out or you're a seasoned competitor, you'll find a wealth of resources, tips, and tricks to help you improve your skills and perform at your best in contests.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Resources Section -->
+  <section id="resources">
+    <h2>Competitive Programming Resources</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Online Judges</h3>
+        <ul>
+          <li><a class="resource-link" href="http://www.usaco.org/" target="_blank">USACO (USA Computing Olympiad)</a></li>
+          <li><a class="resource-link" href="https://codeforces.com/" target="_blank">Codeforces</a></li>
+          <li><a class="resource-link" href="https://www.codechef.com/" target="_blank">CodeChef</a></li>
+          <li><a class="resource-link" href="https://www.topcoder.com/" target="_blank">TopCoder</a></li>
+          <li><a class="resource-link" href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
+          <li><a class="resource-link" href="https://www.hackerearth.com/" target="_blank">HackerEarth</a></li>
+          <li><a class="resource-link" href="https://atcoder.jp/" target="_blank">AtCoder</a></li>
+          <li><a class="resource-link" href="https://www.spoj.com/" target="_blank">SPOJ</a></li>
+          <li><a class="resource-link" href="https://onlinejudge.org/" target="_blank">UVA Online Judge</a></li>
+          <li><a class="resource-link" href="http://acm.timus.ru/" target="_blank">Timus Online Judge</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Contests & Practice Platforms</h3>
+        <ul>
+          <li><a class="resource-link" href="https://www.codechef.com/clashofcode" target="_blank">Clash of Code (CodeChef)</a></li>
+          <li><a class="resource-link" href="https://codingcompetitions.withgoogle.com/" target="_blank">Google Coding Competitions</a></li>
+          <li><a class="resource-link" href="https://www.facebook.com/codingcompetitions/" target="_blank">Facebook Hacker Cup</a></li>
+          <li><a class="resource-link" href="https://icpc.global/" target="_blank">ICPC</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Learning & Tutorials</h3>
+        <ul>
+          <li><a class="resource-link" href="https://cp-algorithms.com/" target="_blank">CP-Algorithms</a></li>
+          <li><a class="resource-link" href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank">GeeksforGeeks Algorithms</a></li>
+          <li><a class="resource-link" href="https://www.topcoder.com/community/competitive-programming/" target="_blank">TopCoder Tutorials</a></li>
+          <li><a class="resource-link" href="https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg" target="_blank">William Lin (YouTube)</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tips and Tricks Section -->
+  <section id="tips">
+    <h2>Competitive Programming Tips & Tricks</h2>
+    <div class="content">
+      <div class="card">
+        <h3>General Tips</h3>
+        <ul>
+          <li>Practice regularly and consistently.</li>
+          <li>Participate in live contests to build speed and accuracy.</li>
+          <li>Analyze your past contest performances to identify weaknesses.</li>
+          <li>Study editorials to understand alternative approaches.</li>
+          <li>Maintain a personal repository of solved problems and techniques.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Problem Solving Strategies</h3>
+        <ul>
+          <li>Read problem statements carefully and plan before coding.</li>
+          <li>Break problems into smaller, manageable parts.</li>
+          <li>Start with simpler problems and gradually tackle more challenging ones.</li>
+          <li>Practice debugging and test your code thoroughly.</li>
+          <li>Master common algorithms and data structures (e.g., sorting, searching, graphs, dynamic programming).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Contest Strategies</h3>
+        <ul>
+          <li>Allocate time wisely and avoid getting stuck on one problem.</li>
+          <li>Prioritize problems that match your strengths.</li>
+          <li>Stay calm under pressure and manage your time effectively.</li>
+          <li>Develop a quick-read strategy for problem statements.</li>
+          <li>Review and optimize your code to minimize overhead.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- More Resources & Advice Section -->
+  <section id="more">
+    <h2>More Resources & Advice</h2>
+    <div class="content">
+      <div class="card">
+        <h3>Community & Forums</h3>
+        <ul>
+          <li><a class="resource-link" href="https://codeforces.com/blog" target="_blank">Codeforces Blog</a></li>
+          <li><a class="resource-link" href="https://www.reddit.com/r/competitiveprogramming/" target="_blank">Reddit: Competitive Programming</a></li>
+          <li><a class="resource-link" href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+          <li><a class="resource-link" href="https://www.quora.com/topic/Competitive-Programming" target="_blank">Quora Discussions</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Additional Advice</h3>
+        <ul>
+          <li>Keep up with the latest trends in algorithms and programming languages.</li>
+          <li>Collaborate with peers to learn from each other's solutions.</li>
+          <li>Invest time in new tools and libraries that enhance problem-solving.</li>
+          <li>Stay updated on upcoming contests and practice sessions.</li>
+          <li>Always remain curious and committed to learning.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tarushv's CP Tips. All rights reserved.</p>
+  </footer>
+  
+  <!-- JavaScript for Light/Dark Mode Toggle -->
+  <script>
+    const toggleButton = document.getElementById('mode-toggle');
+    toggleButton.addEventListener('click', function() {
+      document.body.classList.toggle('dark');
+      toggleButton.textContent = document.body.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+    });
+  </script>
+</body>
+</html>
