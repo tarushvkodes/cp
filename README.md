@@ -107,7 +107,7 @@ The CSS is organized into sections:
 
 ## 📄 License
 
-© 2025 Tarushv's CP Tips. All rights reserved.
+© 2025 Tarushv Kosgi. All rights reserved.
 
 ## 🤝 Contributing
 
